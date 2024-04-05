@@ -1,0 +1,7 @@
+{% macro bgImageHeader(img, height) %}
+    <section class="bg-image-header container-fluid p-0">
+        <div class="w-100 h-{{height}} bg-image-cover d-flex align-items-center justify-content-center bg-overlay" style="background-image: url({{ img }});">
+            {{caller()}}
+        </div>
+    </section>
+{% endmacro %}

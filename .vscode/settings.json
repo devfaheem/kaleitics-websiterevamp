@@ -5,6 +5,9 @@
     "njk": "html"
   },
   "files.associations": {
-    "*.njk": "html"
+    "*.njk": "nunjucks"
+  },
+  "[nunjucks]": {
+    "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
   }
 }

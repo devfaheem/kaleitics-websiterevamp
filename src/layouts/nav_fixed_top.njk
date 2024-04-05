@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang or site.lang }}">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <title>{{ site.title }} - {{ title or meta.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/dist/app.css' | url }}"/>
+
+    {% include "meta.njk" %}
+
+    <script>
+      function rem2px(rem) {
+        var el = document.createElement("div");
+        document
+          .body
+          .appendChild(el);
+        el.style.width = "1000rem";
+        var factor = el.clientWidth / 1000;
+        document
+          .body
+          .removeChild(el);
+        return rem * factor;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- skiplinks -->
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+    {% set sticky_navbar = false%}
+    {% include "header.njk" %}
+
+    {{ content | safe }}
+
+    {# {% include "footer.njk" %} #}
+    <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>
+  </body>
+</html>

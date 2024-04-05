@@ -1,0 +1,15 @@
+---
+layout: nav_fixed_top
+eleventyNavigation:
+  key: blocks
+  order: 4
+title: All Blocks
+---
+
+<ul>
+    {%- for block in collections.block -%}
+        <li>
+            <a href="{{block.url}}">{{ block.data.title |safe }}</a>
+        </li>
+    {%- endfor -%}
+</ul>

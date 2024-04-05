@@ -1,0 +1,82 @@
+// Author : Kaleitics
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+html,
+body {
+  min-height: 100vh;
+}
+
+:root {
+  --bs-body-font-family: "DM Sans", sans-serif;
+}
+
+.bg-primary-light-25 {
+  background: var(--barely-blue, #f1ebfa);
+}
+
+.bg-primary-light-50 {
+  background: var(--barely-blue, #8661b2);
+}
+
+.bg-primary-light-100 {
+  background: var(--barely-blue, #542d8c);
+}
+
+header {
+  & {
+  }
+  .logo {
+    width: 200px;
+  }
+}
+
+.bg-image-header {
+  height: 600px;
+}
+
+.bg-image-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-overlay {
+  background-color: rgb(70 48 94 / 58%);
+  background-blend-mode: multiply;
+}
+
+// block data integration automation start //
+
+.data-integration-automation {
+  .list-group {
+    --bs-list-group-border-color: black;
+    border-color: black;
+  }
+  .right-arrow {
+    height: 6rem;
+  }
+  h6 {
+    font-weight: bold;
+  }
+}
+
+// block data integration automation end //
+
+// case study vtabs //
+
+@include media-breakpoint-up(lg) {
+  .case-study-vtabs {
+    .nav-pills {
+      --bs-nav-pills-link-active-bg: #ddc1ff;
+      .active {
+        color: var(--bs-primary) !important;
+      }
+    }
+    .nav-link {
+      color: white;
+    }
+  }
+}
+
+// case study vtabs end //

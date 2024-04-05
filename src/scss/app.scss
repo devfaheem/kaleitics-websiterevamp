@@ -8,6 +8,7 @@
 
 // 2. Variable overrides
 @import "my_variables";
+@import "hover.css";
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "~bootstrap/scss/variables";
@@ -60,6 +61,8 @@
  * Add your styles here
  */
 @import "custom";
+
+@import "kaleitics";
 
 /*body {
   color: red !important;

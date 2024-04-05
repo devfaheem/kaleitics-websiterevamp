@@ -33,7 +33,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@popperjs/core": "^2.11.5",
     "autoprefixer": "^10.3.1",
-    "bootstrap": "~5.2.2",
+    "bootstrap": "~5.3.3",
     "cross-env": "^7.0.3",
     "del-cli": "^4.0.1",
     "fs-extra": "^8.1.0",
@@ -44,5 +44,8 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.35.2",
     "sass-loader": "^12.6.0"
+  },
+  "dependencies": {
+    "hover.css": "^2.3.2"
   }
 }
