@@ -7,8 +7,35 @@ body {
   min-height: 100vh;
 }
 
+.text-brand-yellow {
+  color: #ffa500;
+}
+
+.round-full {
+  border-radius: 50%;
+}
+
+.round-badge {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.bg-orange {
+  background-color: #ffa500;
+}
+
+.text-orange {
+  color: #ffa500;
+}
+
 :root {
   --bs-body-font-family: "DM Sans", sans-serif;
+  --swiper-pagination-bullet-height: 15px;
+  --swiper-pagination-bullet-width: 15px;
+  --swiper-pagination-color: #ffa500;
 }
 
 .bg-primary-light-25 {
@@ -46,37 +73,57 @@ header {
   background-blend-mode: multiply;
 }
 
-// block data integration automation start //
-
-.data-integration-automation {
-  .list-group {
-    --bs-list-group-border-color: black;
-    border-color: black;
-  }
-  .right-arrow {
-    height: 6rem;
-  }
-  h6 {
-    font-weight: bold;
-  }
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 12px;
+  background-color: #f1ebfa;
 }
 
-// block data integration automation end //
-
-// case study vtabs //
-
-@include media-breakpoint-up(lg) {
-  .case-study-vtabs {
-    .nav-pills {
-      --bs-nav-pills-link-active-bg: #ddc1ff;
-      .active {
-        color: var(--bs-primary) !important;
-      }
-    }
-    .nav-link {
-      color: white;
+.footer {
+  background-color: #0f0b2a;
+  color: white;
+  padding: 10px;
+  .logo {
+    height: 50px;
+    filter: brightness(0) invert(1);
+  }
+  .footer-heading {
+    font-size: 18px;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      margin-top: 10px;
     }
   }
 }
 
-// case study vtabs end //
+.mt-20 {
+  margin-top: 140px;
+}
+
+.rb-image {
+  border-radius: 15px;
+  border: 1px solid black;
+  width: 90%;
+}
+
+@import "blocks/header";
+@import "blocks/data_integration_automation";
+@import "blocks/case_study_vtabs";
+@import "blocks/hexa_content";
+@import "blocks/what_we_do";
+@import "blocks/why_choose_kaleitics";
+@import "blocks/key_benefits";
+@import "blocks/data_engineering_architecture";
+@import "blocks/circle_list";
+@import "blocks/services_provided";
+@import "blocks/pyramid";
+@import "blocks/software_product_development";
+@import "blocks/data_engineering_needs";
+@import "blocks/avr_why_us";
+@import "blocks/aboutus_swiper";
+@import "blocks/contact_form";
+
+@import "components/team_card";

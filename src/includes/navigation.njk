@@ -20,14 +20,14 @@
             <li class="nav-item{% if hasChildren %} dropdown{% endif %} me-4">
                 {%- if hasChildren == false -%}
                     {# Standard menu nav link #}
-                    <a class="text-white fw-bold nav-link{% if isCurrent or isParent %} active{% endif %}"
+                    <a class="fw-bold nav-link{% if isCurrent or isParent %} active{% endif %}"
                 href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"
                 {% if isCurrent %}aria-current="page" {% endif %}>
                         {{ item.title }}
                     </a>
                 {%- else -%}
                     {# Menu nav link for bootstrap dropdowns, change role to button #}
-                    <a class="text-white fw-bold nav-link{% if isCurrent or isParent %} active{% endif %} {% if hasChildren %}dropdown-toggle{% endif %}"
+                    <a class="fw-bold nav-link{% if isCurrent or isParent %} active{% endif %} {% if hasChildren %}dropdown-toggle{% endif %}"
                 href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"
                 {% if isCurrent %}aria-current="page" {% endif %} {% if hasChildren %} role="button" data-bs-toggle="dropdown" aria-expanded="false"{% endif %}
                 id="{{randomMenuId}}">
