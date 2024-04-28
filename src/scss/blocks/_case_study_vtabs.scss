@@ -1,0 +1,18 @@
+// case study vtabs //
+
+.case-study-vtabs {
+  .nav-pills {
+    --bs-nav-pills-link-active-bg: #ddc1ff;
+    .active {
+      color: var(--bs-primary) !important;
+    }
+  }
+  .nav-link {
+    color: white;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+// case study vtabs end //

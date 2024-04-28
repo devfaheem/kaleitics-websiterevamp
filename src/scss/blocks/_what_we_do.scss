@@ -1,0 +1,25 @@
+.what-we-do {
+  .pentagon-shape {
+    height: 240px;
+    width: 240px;
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center;
+    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  }
+  .green {
+    background-color: #008000;
+  }
+  .purple {
+    background-color: #542d8c;
+  }
+  .light-blue {
+    background-color: #13bcbc;
+  }
+  .yellow {
+    background-color: #ffa500;
+  }
+  .blue {
+    background-color: #3636f6;
+  }
+}

@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  height: 70px;
+  width: 100%;
+  background: white;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+
+  .nav-link {
+    color: #542d8c;
+  }
+
+  &.active {
+    background-color: rgb(225 225 225 / 80%);
+    .logo {
+      height: 50px;
+    }
+    .nav-link {
+      color: #531e92;
+      &.active {
+        color: #b785f5;
+      }
+    }
+  }
+}

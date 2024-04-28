@@ -1,0 +1,159 @@
+---
+layout: base
+eleventyNavigation:
+  key: Our Team
+  order: 3
+title: Out Team
+teams:
+- name: Ajay Patel
+  image: assets/images/team.png
+  bio:  is a well-experienced senior executive with 25+ years with tier-1 management consulting spanning operations, start-up, and analytical driven digital transformation and multiple industries including technology, financial, manufacturing, communications, Pharmaceutical, Utilities and automotive sectors.
+  abilities:
+  - As a strategic advisor to global clients, Ajay has defined and delivered digital transformation for insight-driven enterprise including architecture modernization, advanced analytics, and artificial intelligence.
+  - Expertise in building Insight Driven Enterprises with focus on analytics and artificial intelligence driving business innovation and data driven transformation across multiple industry segments including Healthcare, Insurance, Finance, Telecom, Media and Technology
+  - Proven experience in partnering with Global Clients in their journey towards data and digital transformations
+  - In collaboration with Clients, established digital transformation strategy and value driven execution roadmap
+  - Proven track record in solving industry challenges applying insights with AI/ML to drive analytical driven culture by building MVPs or specific use cases prior to industrialization
+- name: Ajay Patel
+  image: assets/images/team.png
+  bio:  is a well-experienced senior executive with 25+ years with tier-1 management consulting spanning operations, start-up, and analytical driven digital transformation and multiple industries including technology, financial, manufacturing, communications, Pharmaceutical, Utilities and automotive sectors.
+  abilities:
+  - As a strategic advisor to global clients, Ajay has defined and delivered digital transformation for insight-driven enterprise including architecture modernization, advanced analytics, and artificial intelligence.
+  - Expertise in building Insight Driven Enterprises with focus on analytics and artificial intelligence driving business innovation and data driven transformation across multiple industry segments including Healthcare, Insurance, Finance, Telecom, Media and Technology
+  - Proven experience in partnering with Global Clients in their journey towards data and digital transformations
+  - In collaboration with Clients, established digital transformation strategy and value driven execution roadmap
+  - Proven track record in solving industry challenges applying insights with AI/ML to drive analytical driven culture by building MVPs or specific use cases prior to industrialization
+- name: Ajay Patel
+  image: assets/images/team.png
+  bio:  is a well-experienced senior executive with 25+ years with tier-1 management consulting spanning operations, start-up, and analytical driven digital transformation and multiple industries including technology, financial, manufacturing, communications, Pharmaceutical, Utilities and automotive sectors.
+  abilities:
+  - As a strategic advisor to global clients, Ajay has defined and delivered digital transformation for insight-driven enterprise including architecture modernization, advanced analytics, and artificial intelligence.
+  - Expertise in building Insight Driven Enterprises with focus on analytics and artificial intelligence driving business innovation and data driven transformation across multiple industry segments including Healthcare, Insurance, Finance, Telecom, Media and Technology
+  - Proven experience in partnering with Global Clients in their journey towards data and digital transformations
+  - In collaboration with Clients, established digital transformation strategy and value driven execution roadmap
+  - Proven track record in solving industry challenges applying insights with AI/ML to drive analytical driven culture by building MVPs or specific use cases prior to industrialization
+- name: Allan Frank
+  image: assets/images/allan_frank.png
+  bio:  Allan Frank brings 45 years of entrepreneurial and executive experience to support the growth of our firm. His background includes Chief Digital Officer for The Hackett Group, President, CTO, & Co-founder of Answerthink, CTO for the City of Philadelphia, CTO for Capgemini Invent, and CTO for KPMG Peat Marwick. Allan focuses on the application of transformational technologies, in particular, the disruptive role of artificial intelligence in the re-imagined enterprise. He is also a recognized expert in the areas of information delivery, decision support, and knowledge management. He has been recognized for his contributions to the IT Industry by several technology publications including Philadelphia Tech, where he was selected as one of the top 10 Technology Leaders in the region and InformationWeek, where he was selected as one of the top 10 Technology Innovators in the United States. Mr. Frank received the Computerworld Premier 100 Award which identified him as one of the top 100 people in the U.S. having an exceptional ability to lead their organizations through the effective use of technology.
+- name: Araceli Guenther
+  image: assets/images/araceli.png
+  bio:  "has over 20 years executive management experience and a proven ability to oversee and direct high visibility and complex management consulting projects. Araceli has directed numerous strategic projects for companies in the U.S., Latin America and Europe. In addition to being an Executive Principal for Victrix Global, Araceli has worked with IT software firms globally, focusing on the use of emergent web, mobile and cloud technologies and digital transformation. 
+        Araceli is responsible for producing and implementing cost savings strategies related to financial & operational performance, supply chain, and cold chain logistics in a global environment. She has worked extensively to support companies faced with opportunities for growth. Through extensive business knowledge along with access to the Victrix network, develops and executes Go to Market Strategies that support clients in their efforts to grow internationally. 
+        For the past 10 years, Araceli had been involved with Temple University Fox School of Business, where she is involved with the Temple University Management Consulting Program. She teaches three courses; International Business – LatAm, Global Business Policies, and the MBA course Management Consulting Principles & Practices. "
+
+
+---
+
+<section class="container mt-20">
+    <div class="row">
+        <div class="col-12">
+            <div class="col-12">
+                <h2 class="fw-bold">Meet Our Leadership team</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        {% set rev = cycler("","flex-row-reverse") %}
+        {% for team in teams %}
+            {% set name = team.name %}
+            {% set bio = team.bio %}
+            {% set abilities = team.abilities %}
+            {% set image = team.image %}
+            {% set r = rev.next() %}
+            {% include "../components/team_card.njk" %}
+        {% endfor %}
+    </div>
+</section>
+<section class="container mt-5">
+    <h4 class="fw-bold">Meet the passionate Kaleitics team – the creative minds driving innovation and steering us toward a brighter future.</h4>
+    <div class="row mt-5">
+        <div class="col-md-4 text-center position-relative">
+            <img class="rb-image" src="/assets/images/team/team_member.png" >
+            <div class="home__sec2__content w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="p-5">
+                    <h6 class="text-center">Job Title</h6>
+                    <h3 class="fw-bold">Name of the employee</h3>
+                    <p>When an unownn printer took a gallery of type and scrambled intelligenceto make a type secimen book,. it has survived not only five centuries, but also the leap into electronic type setting reamining essentillay un changed</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center position-relative">
+            <img class="rb-image" src="/assets/images/team/image_60.png" >
+            <div class="home__sec2__content w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="p-5">
+                    <h6 class="text-center">Job Title</h6>
+                    <h3 class="fw-bold">Name of the employee</h3>
+                    <p>When an unownn printer took a gallery of type and scrambled intelligenceto make a type secimen book,. it has survived not only five centuries, but also the leap into electronic type setting reamining essentillay un changed</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center position-relative">
+            <img class="rb-image" src="/assets/images/team/team_member-3.png" >
+            <div class="home__sec2__content w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="p-5">
+                    <h6 class="text-center">Job Title</h6>
+                    <h3 class="fw-bold">Name of the employee</h3>
+                    <p>When an unownn printer took a gallery of type and scrambled intelligenceto make a type secimen book,. it has survived not only five centuries, but also the leap into electronic type setting reamining essentillay un changed</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-4 text-center position-relative">
+            <img class="rb-image" src="/assets/images/team/team_member-2.png" >
+            <div class="home__sec2__content w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="p-5">
+                    <h6 class="text-center">Job Title</h6>
+                    <h3 class="fw-bold">Name of the employee</h3>
+                    <p>When an unownn printer took a gallery of type and scrambled intelligenceto make a type secimen book,. it has survived not only five centuries, but also the leap into electronic type setting reamining essentillay un changed</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center position-relative">
+            <img class="rb-image" src="/assets/images/team/team_member-1.png" >
+            <div class="home__sec2__content w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="p-5">
+                    <h6 class="text-center">Job Title</h6>
+                    <h3 class="fw-bold">Name of the employee</h3>
+                    <p>When an unownn printer took a gallery of type and scrambled intelligenceto make a type secimen book,. it has survived not only five centuries, but also the leap into electronic type setting reamining essentillay un changed</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center position-relative">
+            <img class="rb-image" src="/assets/images/team/team_member-4.png" >
+            <div class="home__sec2__content w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="p-5">
+                    <h6 class="text-center">Job Title</h6>
+                    <h3 class="fw-bold">Name of the employee</h3>
+                    <p>When an unownn printer took a gallery of type and scrambled intelligenceto make a type secimen book,. it has survived not only five centuries, but also the leap into electronic type setting reamining essentillay un changed</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="fw-bold text-center">Why <span class="text-orange">Us?</span></h3>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <img  class="w-100" src="/assets/images/why_us_1.png" >
+        </div>
+        <div class="col-md-6"><img class="w-100" src="/assets/images/why_us_2.png" ></div>
+    </div>
+    <h5 class="mt-5 fw-bold text-center">Kaleitics delivers dynamic, scalable solutions designed to drive efficiency, streamline operations, and foster growth across your business landscape.`</h5>
+</section>
+<section class="container mt-5">
+    {% set title = "Connect with us Today!" %}
+    {% set subtitle = "Please fill out the form below and our team will get back to you as soon as possible." %}
+    {% set btntext = "submit" %}
+    {% include "../blocks/contact_form.njk" %}
+</section>

@@ -1,0 +1,63 @@
+.avr-why-us {
+  position: relative;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    .outer-circle {
+      border: 1px solid black;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .inner-circle {
+      border: 1px dotted black;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__hr {
+      height: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      background-color: #531e92;
+      width: 250px;
+    }
+  }
+
+  &__right {
+    margin-top: 100px;
+  }
+  &__line1 {
+    position: absolute;
+    top: 82px;
+    left: 338px;
+    width: 500px;
+  }
+  &__line2 {
+    position: absolute;
+    top: 337px;
+    left: 399px;
+    width: 525px;
+  }
+  &__line3 {
+    position: absolute;
+    top: 668px;
+    height: 68px;
+    left: 134px;
+    width: 535px;
+  }
+  &__line4 {
+    position: absolute;
+    bottom: -75px;
+    left: 180px;
+    width: 535px;
+    transform: rotateZ(19deg);
+  }
+}

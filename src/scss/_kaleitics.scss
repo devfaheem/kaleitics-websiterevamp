@@ -5,6 +5,16 @@
 html,
 body {
   min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.bullet:before {
+  content: "• ";
+}
+
+.f-lg {
+  font-size: 25px;
 }
 
 .text-brand-yellow {
@@ -23,12 +33,24 @@ body {
   font-size: 18px;
 }
 
+.bg-grey {
+  background-color: #f2f2f2;
+}
+
 .bg-orange {
   background-color: #ffa500;
 }
 
 .text-orange {
   color: #ffa500;
+}
+
+.b-20 {
+  border-radius: 20px;
+}
+
+.b-30 {
+  border-radius: 30px;
 }
 
 :root {
@@ -48,6 +70,10 @@ body {
 
 .bg-primary-light-100 {
   background: var(--barely-blue, #542d8c);
+}
+
+.text-brand {
+  color: #542d8c;
 }
 
 header {
@@ -99,8 +125,16 @@ form .form-control {
   }
 }
 
+.mt-10 {
+  margin-top: 100px;
+}
+
 .mt-20 {
   margin-top: 140px;
+}
+
+.pt-20 {
+  padding-top: 140px;
 }
 
 .rb-image {
@@ -127,3 +161,7 @@ form .form-control {
 @import "blocks/contact_form";
 
 @import "components/team_card";
+@import "components/home_hero";
+
+@import "pages/home";
+@import "pages/services_3";

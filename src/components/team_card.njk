@@ -1,0 +1,19 @@
+<div class="col-12 mb-5 team-card">
+    <div class="row {{r}}">
+        <div class="col-md-4 text-md-end">
+            <img class="team-pic" src="/{{image}}">
+        </div>
+        <div class="col-md-8">
+            <p>
+                <h3 class="fw-bold d-inline">{{name}}</h3>
+                {{bio}}
+
+            </p>
+            <ul>
+                {% for ability in abilities %}
+                    <li>{{ability}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

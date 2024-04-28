@@ -1,0 +1,39 @@
+.bg-circle-lines {
+  background-image: url("/assets/images/circle_lines.png");
+  background-repeat: no-repeat;
+}
+
+.bg-chart-lines {
+  background-image: url("/assets/images/chart_lines.png");
+  background-repeat: no-repeat;
+}
+
+.bg-triangle-lines {
+  background-image: url("/assets/images/triangle_lines.png");
+  background-repeat: no-repeat;
+}
+
+.home {
+  &__sec2 {
+    &__img {
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    &__content {
+      position: absolute;
+      background-color: white;
+      top: 0px;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+    &__content:hover {
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
+  }
+  &__sec3 {
+    &__img {
+      width: 150px;
+    }
+  }
+}

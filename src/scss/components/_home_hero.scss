@@ -1,0 +1,76 @@
+.home-hero {
+  &__info {
+  }
+  &__triangle {
+    position: relative;
+    img {
+      width: 600px;
+      animation: trianlge_blur 3s normal;
+    }
+    .hr {
+      background-color: orange;
+      height: 2px;
+    }
+
+    &__h1 {
+      position: absolute;
+      right: 144px;
+      top: 128px;
+      transform: rotate(30deg);
+      animation: title_anime_1 4s normal;
+    }
+
+    &__h2 {
+      position: absolute;
+      left: 3px;
+      top: 280px;
+      transform: rotate(270deg);
+      animation: title_anime_2 4s normal;
+    }
+    &__h3 {
+      position: absolute;
+      right: 148px;
+      bottom: 41px;
+      transform: rotate(149deg);
+      animation: title_anime_3 4s normal;
+    }
+  }
+}
+
+@keyframes trianlge_blur {
+  0% {
+    filter: blur(75px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes title_anime_1 {
+  0% {
+    right: 206px;
+    top: 88px;
+  }
+}
+
+@keyframes title_anime_2 {
+  0% {
+    top: 356px;
+  }
+}
+
+@keyframes title_anime_3 {
+  0% {
+    right: 71px;
+    bottom: 86px;
+  }
+}
+
+.particles-js-canvas-el {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}

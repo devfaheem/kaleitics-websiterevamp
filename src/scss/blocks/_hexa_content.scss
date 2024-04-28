@@ -1,0 +1,73 @@
+@include media-breakpoint-down(md) {
+  .hexa-container {
+    .hexagon-grid {
+      --s: 100px; /* control the size */
+      --g: 10px; /* control the gap */
+      --t: 30px;
+      h6,
+      h4 {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .hexa-container {
+    .hexagon-grid {
+      --s: 250px; /* control the size */
+      --g: 10px; /* control the gap */
+      --t: 100px;
+    }
+  }
+}
+.hexa-container {
+  .hexagon-grid {
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+
+    > .hexagon-card:nth-child(1) {
+      --_x: calc(-100% - var(--g));
+    }
+    > .hexagon-card:nth-child(7) {
+      --_x: calc(100% + var(--g));
+    }
+    > .hexagon-card:nth-child(3),
+    > .hexagon-card:nth-child(5) {
+      --_y: calc(-75% - 0.87 * var(--g));
+    }
+    > .hexagon-card:nth-child(4),
+    > .hexagon-card:nth-child(6) {
+      --_y: calc(75% + 0.87 * var(--g));
+    }
+    > .hexagon-card:nth-child(3),
+    > .hexagon-card:nth-child(4) {
+      --_x: calc(-50% - 0.5 * var(--g));
+    }
+    > .hexagon-card:nth-child(5),
+    > .hexagon-card:nth-child(6) {
+      --_x: calc(50% + 0.5 * var(--g));
+    }
+  }
+  .hexagon-card {
+    grid-area: 1/1;
+    transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+    .hexagon {
+      width: var(--s);
+      background-color: #f2f2f2;
+      aspect-ratio: 0.866;
+      clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+      img {
+        width: calc(var(--s) - (var(--s) / 1.5));
+      }
+
+      .hexa-content {
+        position: absolute;
+        top: var(--t);
+      }
+    }
+  }
+  .hexagon:hover {
+    background-color: #c0a3e3;
+  }
+}

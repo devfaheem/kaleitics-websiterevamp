@@ -1,0 +1,83 @@
+---
+layout: base
+eleventyNavigation:
+  key: Custom Software Development
+  order: 3
+  parent: Services
+title: Custom Software Development
+---
+
+{%- from "../components/bg_image_content.njk" import bgImageHeader -%}
+
+{% call bgImageHeader("/assets/images/service_1.png", 100, false) -%}
+<div class="w-100 p-5">
+    <h2 class="text-white fw-bold">Empowering Tomorrow Through Tailored <br/> Solutions</h2>
+    <button class="btn bg-primary-light-50 text-white p-3 hvr-radial-out b-30 w-25">Get Started</button>
+</div>
+{%- endcall %}
+
+{% include "../blocks/circle_list.njk" %}
+
+<section class="container bg-primary-light-50 pt-5 b-20 ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-8">
+                <h3 class="text-light fw-bold">Why <span class="text-orange">Kaleitics</span></h3>
+                <p class="text-light mt-5">
+          Complex problems, shifting demands, tumultuous business environments, and an influx of data make today’s high stakes in the digital economy even more dangerous. Our operational heritage helps us decipher your challenges, and our commitment to value creation helps identify new opportunities. Always at the ready, we stand with you.
+        </p>
+            </div>
+            <div class="col-4">
+                <img src="/assets/images/about_question_mark.png" class="img-fluid b-20">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container mt-5">
+    <h1 class="text-center">Custom Software Development</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="w-100" src="/assets/images/services_1/rectangle_6.png">
+            <h4 class="text-center mt-3 fw-bold">Tailored Software Solutions</h4>
+        </div>
+        <div class="col-md-4">
+            <img class="w-100" src="/assets/images/services_1/rectangle_1.png">
+            <h4 class="text-center mt-3 fw-bold">Software Modernization and Redesign</h4>
+        </div>
+        <div class="col-md-4">
+            <img class="w-100" src="/assets/images/services_1/rectangle_5.png">
+            <h4 class="text-center mt-3 fw-bold">Software Application Maintenance</h4>
+        </div>
+
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <img class="w-100" src="/assets/images/services_1/rectangle_2.png">
+            <h4 class="text-center mt-3 fw-bold">SaaS Apps</h4>
+        </div>
+        <div class="col-md-4">
+            <img class="w-100" src="/assets/images/services_1/rectangle_3.png">
+            <h4 class="text-center mt-3 fw-bold">API Integration Services</h4>
+        </div>
+        <div class="col-md-4">
+            <img class="w-100" src="/assets/images/services_1/rectangle_4.png">
+            <h4 class="text-center mt-3 fw-bold">Maintenance & Support</h4>
+        </div>
+
+    </div>
+</section>
+<section class="container mt-20">
+    <div class="w-100 bg-primary-light-100 d-flex justify-content-center b-20">
+        <div class="text-center p-5 w-50">
+            <h2 class="text-white m-5">Requires further assistance?</h2>
+            <button class="btn btn-light p-3 fw-bold text-primary display-6 f-lg w-100">Request 1 on 1 call</button>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-20">
+    {% set title = "Let Us Know What You Think" %}
+    {% set subtitle = "Please fill out the form below and our team will get back to you as soon as possible." %}
+    {% set btntext = "Submit" %}
+    {% include "../blocks/contact_form.njk" %}
+</section>

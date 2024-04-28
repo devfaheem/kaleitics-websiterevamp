@@ -1,0 +1,32 @@
+@include media-breakpoint-up(lg) {
+  .services-provided {
+    .circle-content {
+      height: 415px;
+      width: 415px;
+      border-radius: 50%;
+      img {
+        position: relative;
+        top: -20px;
+        width: 66px;
+      }
+    }
+
+    &__center {
+      height: 400px;
+      width: 120%;
+      z-index: -2;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .services-provided {
+    &__center {
+      height: 100px;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      z-index: -2;
+    }
+  }
+}

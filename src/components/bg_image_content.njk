@@ -1,6 +1,8 @@
-{% macro bgImageHeader(img, height) %}
-    <section class="bg-image-header container-fluid p-0">
-        <div class="w-100 h-{{height}} bg-image-cover d-flex align-items-center justify-content-center bg-overlay" style="background-image: url({{ img }});">
+{% macro bgImageHeader(img, height, overlay) %}
+    {% set isoverlay = ('bg-overlay' if overlay else '') %}
+
+    <section class="bg-image-header container-fluid p-0" style="margin-top:70px">
+        <div class="w-100 h-{{height}} bg-image-cover d-flex align-items-center justify-content-center  {{isoverlay}}" style="background-image: url({{ img }});">
             {{caller()}}
         </div>
     </section>

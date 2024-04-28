@@ -4,12 +4,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { register } from 'swiper/element/bundle';
 import './blocks/aboutus_swiper'
+import './particle_config'
 // register swiper elements
 
 register();
 
 // ..
-AOS.init({ duration: 2000 });
+AOS.init({ duration: 2000, once: true, disable: 'phone' });
 // More info for using bootstrap via npm:
 // https://getbootstrap.com/docs/5.0/getting-started/download/#npm
 function rem2px(rem) {

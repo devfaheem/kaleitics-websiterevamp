@@ -1,0 +1,30 @@
+.eng-needs {
+  position: relative;
+  &__right {
+    margin-top: 100px;
+  }
+  &__line1 {
+    position: absolute;
+    top: 0px;
+    position: absolute;
+    top: 56px;
+    left: 419px;
+    width: 500px;
+  }
+  &__line2 {
+    position: absolute;
+    top: 0px;
+    position: absolute;
+    top: 223px;
+    left: 399px;
+    width: 525px;
+  }
+  &__line3 {
+    position: absolute;
+    top: 0px;
+    position: absolute;
+    top: 424px;
+    left: 399px;
+    width: 535px;
+  }
+}

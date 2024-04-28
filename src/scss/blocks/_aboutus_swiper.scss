@@ -1,0 +1,28 @@
+.aboutus-feedback {
+  swiper-container {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 100px;
+    height: 500px;
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+      }
+    }
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

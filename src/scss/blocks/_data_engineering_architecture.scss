@@ -1,0 +1,51 @@
+@include media-breakpoint-up(md) {
+  .dea {
+    height: 842px;
+    img {
+      position: relative;
+      left: 107px;
+      width: 1100px;
+    }
+    &__content {
+      position: relative;
+      top: 234px;
+    }
+    &__block {
+      position: absolute;
+      width: 320px;
+      &__b1 {
+        top: -112px;
+        left: 240px;
+        width: 356px;
+      }
+      &__b2 {
+        top: 43px;
+        left: 139px;
+      }
+      &__b3 {
+        top: 310px;
+        left: 88px;
+      }
+      &__b4 {
+        top: 486px;
+        left: 160px;
+      }
+      &__b5 {
+        top: -112px;
+        left: 773px;
+      }
+      &__b6 {
+        top: 36px;
+        left: 897px;
+      }
+      &__b7 {
+        top: 287px;
+        left: 939px;
+      }
+      &__b8 {
+        top: 497px;
+        left: 900px;
+      }
+    }
+  }
+}

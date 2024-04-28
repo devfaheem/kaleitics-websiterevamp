@@ -1,0 +1,38 @@
+.dev-process {
+  padding-top: 30px;
+  background-color: #f2f2f2;
+  &__container {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 913px;
+    min-height: 1700px;
+  }
+  &__rhombus {
+    width: 200px;
+    height: 200px;
+    border: 15px solid #542d8c;
+    transform: rotate(45deg);
+    -webkit-box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
+    img {
+      transform: rotate(-45deg);
+    }
+    &__right {
+      &__content {
+        position: relative;
+        left: 48px;
+        width: 449px;
+      }
+    }
+
+    &__left {
+      &__content {
+        position: relative;
+        right: 48px;
+        width: 442px;
+      }
+    }
+  }
+}

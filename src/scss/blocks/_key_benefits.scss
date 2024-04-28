@@ -1,0 +1,33 @@
+.key-benefits {
+  &__img-top img {
+    width: 100%;
+  }
+  &__img-bottom img {
+    width: 75%;
+  }
+  &__img-bottom {
+    position: relative;
+    top: -100px;
+  }
+  .yellow {
+    background-color: #fdac3e;
+  }
+  .purple {
+    background-color: #8a6aee;
+  }
+  .orange {
+    background-color: #f99640;
+  }
+  .pink {
+    background-color: #ff9bb3;
+  }
+  .violet {
+    background-color: #bc75e3;
+  }
+  .red {
+    background-color: #fe8b8e;
+  }
+  .light-purple {
+    background-color: #a07df4;
+  }
+}
