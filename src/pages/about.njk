@@ -3,52 +3,53 @@ layout: base
 eleventyNavigation:
   key: About
   order: 3
+  parent: Home
 title: About
 ---
 
 {%- from "../components/bg_image_content.njk" import bgImageHeader -%}
 
 {% call bgImageHeader("/assets/images/about_us_header.png", 100, true) -%}
-<h1 class="text-light fw-bold">About Us</h1>
+<h1 class="text-light fw-bold" data-aos="fade">About Us</h1>
 {%- endcall %}
 
-<section class="container">
-  <div class="row align-items-center">
-    <div class="col-6 text-start">
-      <h3 class="fw-bold">Who We Are ?</h3>
-      <p>
+<section class="container mt-5" data-aos="fade-left">
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-start">
+            <h3 class="fw-bold">Who We Are ?</h3>
+            <p>
         Kaleitics has been founded with the intent to leverage data and automation to seamlessly link business operations to increase enterprise value and profits, driven by performance insights and artificial intelligence. Enterprises identify and turn areas of inefficiencies into areas of growth achieving sustainable results and compete in the digital economy. This ethos remains at the core of our firm. We are the technology firm known for asking tough questions, listening well, digging in, and rolling up our sleeves. Using data as evidence, we are fact-driven and action-oriented. We move our clients forward, to where they need to be, at a speed their organization is comfortable with.
       </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="/assets/images/about_sec_1.png" class="img-fluid">
+        </div>
     </div>
-    <div class="col-6">
-      <img src="/assets/images/about_sec_1.png" class="img-fluid">
-    </div>
-  </div>
 </section>
-<section class="bg-primary-light container-fluid py-5">
-  <div class="container">
-    <div class="row align-items-center flex-row-reverse">
-      <div class="col-6 text-start">
-        <h3 class="fw-bold">What We Do</h3>
-        <p>
+<section class="bg-primary-light container-fluid py-5" data-aos="fade-right">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-start">
+                <h3 class="fw-bold">What We Do</h3>
+                <p>
         Our advisors, technologists, data scientists, and solution architects are seasoned experts from the private and public sectors, and each is committed to professionalism and excellence in all our work. We maintain a flat organizational structure, where advisors, technologists, and architects work side-by-side in collaboration with clients. Our professionals learn from one another, and we leverage each individual’s strengths to provide our clients with the best team.
       </p>
-        <p>
+                <p>
         We uncover, implement and maintain the right solution, at the right time, in the right way, and for the right price. Kaleitics provides problem-solving and value creation offerings for enterprises across various industries and around the world. We work as advisers, interim leaders, and trusted partners advising our clients on what they need to know, but not always what they want to hear. In collaborative strategic planning sessions with our clients, we discuss and select the automation platforms and solutions required to build a showcase that proves our ability to deliver the desired ROI.
       </p>
-      </div>
-      <div class="col-6">
-        <img src="/assets/images/about_2.png" class="img-fluid">
-      </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="/assets/images/about_2.png" class="img-fluid">
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
-<section class="container">
-  <div class="row align-items-center">
-    <div class="col-6 text-start">
-      <h3 class="fw-bold">How We Help</h3>
-      <p>
+<section class="container" data-aos="fade-left">
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-start">
+            <h3 class="fw-bold">How We Help</h3>
+            <p>
         How We Help
 
 Through consultative approach, Kaleitics SME’s will work with you to identify the pain points, discuss possible solutions, and collectively agree on a MVP scope with maximum business value and that can be delivered in 8-10 weeks with no commitments. The MVP allows the stakeholders to evaluate the ROI and consider the solution deployment in the day-to-day operations of the enterprise with additional features and functions in partnership with Kaleitics. 
@@ -57,33 +58,33 @@ Our “Solutions-as-a-Service” delivers incremental development an ongoing sup
 
 We focus on solutions that drives “Velocity-to-Value” in most economical .
       </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="/assets/images/about_how_we_help.png" class="img-fluid">
+        </div>
     </div>
-    <div class="col-6">
-      <img src="/assets/images/about_how_we_help.png" class="img-fluid">
-    </div>
-  </div>
 </section>
 
-<section class="container-fluid bg-primary-light-50 pt-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-8">
-        <h3 class="text-light fw-bold">Why Kaleitics ?</h3>
-        <p class="text-light">
+<section class="container-fluid mt-5 bg-primary-light-50 pt-5" data-aos="fade">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h3 class="text-light fw-bold">Why Kaleitics ?</h3>
+                <p class="text-light">
           Complex problems, shifting demands, tumultuous business environments, and an influx of data make today’s high stakes in the digital economy even more dangerous. Our operational heritage helps us decipher your challenges, and our commitment to value creation helps identify new opportunities. Always at the ready, we stand with you.
         </p>
-      </div>
-      <div class="col-4">
-        <img src="/assets/images/about_question_mark.png" class="img-fluid">
-      </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                <img src="/assets/images/about_question_mark.png" class="w-100 img-fluid">
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 {% include "../blocks/aboutus_swiper.njk" %}
 <section class="container my-5">
-  {% set title = "Let Us Know What You Think" %}
-  {% set subtitle = "Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam." %}
-  {% set btntext = "send message" %}
-  {% include "../blocks/contact_form.njk" %}
+    {% set title = "Let us know what you think" %}
+    {% set subtitle = "Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam." %}
+    {% set btntext = "send message" %}
+    {% include "../blocks/contact_form.njk" %}
 </section>

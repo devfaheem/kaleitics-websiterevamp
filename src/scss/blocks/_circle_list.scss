@@ -42,3 +42,17 @@
     }
   }
 }
+
+@include media-breakpoint-down(md) {
+  .circle-list {
+    .circle-img {
+      border: 18px solid #bfacd7;
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+    }
+    .circle-white {
+      width: auto;
+    }
+  }
+}

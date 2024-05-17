@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
-    <title>{{ site.title }} - {{ title or meta.title }}</title>
+    <title>Kaleitics</title>
 
     <link rel="stylesheet" href="{{ '/dist/app.css' | url }}"/>
 
@@ -34,7 +34,6 @@
     {% set sticky_navbar = true %}
     {% include "header.njk" %}
     {{ content | safe }}
-    {{class}}
 
     {% include "footer.njk" %}
     <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>

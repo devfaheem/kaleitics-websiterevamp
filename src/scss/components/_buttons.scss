@@ -1,0 +1,78 @@
+.btn-style-2 {
+  padding: 10px 50px;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #542d8c;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+  &:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease;
+  }
+}
+
+.btn-style-1 {
+  padding: 10px 60px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50px;
+  background-color: #542d8c;
+
+  transition: all 1s ease;
+  &:hover {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 1s ease;
+  }
+}
+
+.btn-style-3 {
+  background-color: #b17dff;
+  color: black;
+  padding: 10px 90px;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+.btn-style-4 {
+  background-color: initial;
+  color: white;
+  padding: 10px 90px;
+  transition: all 0.5s ease;
+  border: 1px solid black;
+  &:hover {
+    background-color: #b17dff;
+    color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+.btn-style-5 {
+  background-color: #f1ebfa;
+  color: black;
+  padding: 10px 90px;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #b17dff;
+    color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+.btn-style-6 {
+  background-color: #542d8c;
+  color: white;
+  transition: all 0.5s ease;
+  border: 1px solid black;
+  &:hover {
+    background-color: #b17dff;
+    color: white;
+    transition: all 0.5s ease;
+  }
+}

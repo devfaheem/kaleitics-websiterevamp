@@ -1,0 +1,9 @@
+@include media-breakpoint-down(md) {
+  .home-hero__triangle {
+    scale: 0.7;
+    left: -107px;
+  }
+  .header-offset {
+    margin-top: 70px !important;
+  }
+}

@@ -11,7 +11,7 @@
 <meta property="og:locale" content="{{ site.local or meta.locale }}">
 
 {%- if meta.image -%}
-<meta property="og:image" content="{{ meta.image | url | absoluteUrl(site.baseUrl) }}">
+    <meta property="og:image" content="{{ meta.image | url | absoluteUrl(site.baseUrl) }}">
 {%- endif -%}
 {# eo Open Graph #}
 
@@ -20,13 +20,11 @@
 <meta name="twitter:title" content="{{ title or meta.title }}">
 <meta name="twitter:description" content="{{ meta.description or site.description}}">
 {%- if meta.image -%}
-<meta property="twitter:image" content="{{ meta.image | url | absoluteUrl(site.baseUrl) }}">
+    <meta property="twitter:image" content="{{ meta.image | url | absoluteUrl(site.baseUrl) }}">
 {%- endif -%}
 {# eo Twitter #}
 
-
-
 {# Favicon #}
-<link rel="icon" href="{{ '/assets/favicons/favicon.ico' | url }}">
+<link rel="icon" href="{{ '/assets/images/favicon.ico' | url }}">
 
 {# This file is ignored by prettier by now /bc too much damage ;-), see .prettierignore #}

@@ -12,6 +12,7 @@
     },
     "shape": {
       "type": "circle",
+      "opacity": 0.2,
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -47,14 +48,14 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
-      "color": "#cdcdcd",
-      "opacity": 0.4,
-      "width": 1.5
+      "distance": 350,
+      "color": "#bc81ff",
+      "opacity": 0.1,
+      "width": 1.0
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,

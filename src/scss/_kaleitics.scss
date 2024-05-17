@@ -8,8 +8,48 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+.bg-light-grey {
+  background-color: #f2f2f2;
+}
+.bottom-left {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+}
+.button-lg {
+  width: 400px;
+}
 
-.bullet:before {
+.px-10 {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+.text-purple {
+  color: #9978f0;
+}
+
+.text-red {
+  color: #db4a80;
+}
+
+.text-yellow {
+  color: #ffb900;
+}
+
+.text-violet {
+  color: #6fd7cf;
+}
+
+.text-blue {
+  color: #687ae4;
+}
+
+.text-green {
+  color: #008000;
+}
+
+.bullet:blue {
   content: "• ";
 }
 
@@ -53,6 +93,10 @@ body {
   border-radius: 30px;
 }
 
+.b-50 {
+  border-radius: 50px;
+}
+
 :root {
   --bs-body-font-family: "DM Sans", sans-serif;
   --swiper-pagination-bullet-height: 15px;
@@ -72,8 +116,20 @@ body {
   background: var(--barely-blue, #542d8c);
 }
 
+.bg-brand {
+  background-color: #542d8c;
+}
+
 .text-brand {
   color: #542d8c;
+}
+
+.border-brand {
+  border: 1px solid #542d8c;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 header {
@@ -85,17 +141,19 @@ header {
 }
 
 .bg-image-header {
-  height: 600px;
+  position: relative;
+  min-height: 600px;
 }
 
 .bg-image-cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: inherit;
 }
 
 .bg-overlay {
-  background-color: rgb(70 48 94 / 58%);
+  background-color: rgb(89 89 89 / 58%);
   background-blend-mode: multiply;
 }
 
@@ -141,6 +199,19 @@ form .form-control {
   border-radius: 15px;
   border: 1px solid black;
   width: 90%;
+  margin-bottom: 20px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mh-480 {
+  min-height: 463px !important;
+}
+
+.header-offset {
+  margin-top: 70px;
 }
 
 @import "blocks/header";
@@ -159,9 +230,21 @@ form .form-control {
 @import "blocks/avr_why_us";
 @import "blocks/aboutus_swiper";
 @import "blocks/contact_form";
+@import "blocks/step_line";
 
 @import "components/team_card";
 @import "components/home_hero";
+@import "components/icon_box";
+@import "components/content_box";
+@import "components/buttons";
 
 @import "pages/home";
 @import "pages/services_3";
+@import "pages/services_5";
+@import "pages/services_6";
+@import "pages/services_7";
+@import "pages/platform_4";
+@import "pages/platform_6";
+@import "pages/platform_7";
+
+@import "_fix_down_md.scss";

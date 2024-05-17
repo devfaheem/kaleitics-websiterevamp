@@ -37,16 +37,14 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="{{randomMenuId}}">
                         <li>
-                            <a class="dropdown-item" href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}">
-                                <!-- {{ item.title }}-->Overview</a>
-                        </li>
-                        {%- for child in item.children %}{{ renderNavListDropdown(child) }}
-                        {% endfor -%}
-                    </ul>
-                {%- endif -%}
-            </li>
-        {%- endif -%}
-    {%- endfor -%}
-</ul>
+                            <a class="dropdown-item" href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"></li>
+                            {%- for child in item.children %}{{ renderNavListDropdown(child) }}
+                            {% endfor -%}
+                        </ul>
+                    {%- endif -%}
+                </li>
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
 
-{# This file is ignored by prettier by now /bc too much damage ;-), see .prettierignore #}
+    {# This file is ignored by prettier by now /bc too much damage ;-), see .prettierignore #}

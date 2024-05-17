@@ -1,0 +1,13 @@
+.step-line {
+  .br-1 {
+    border-right: 3px solid black;
+  }
+  &__handle {
+    &:before {
+      content: "• ";
+    }
+    border-top: 5px solid;
+    opacity: 1;
+    height: 5px;
+  }
+}
